@@ -24,6 +24,12 @@ Things you may want to cover:
 # What is rails 
  - Rails is an MVC model view controller
 
+# Some diffrences in sysntax
+ - <%= %> This is used to render stuff out to the screen
+ - <% %> This is used for loops and other stuff not being renders
+
+# To creat crud in rails we use a scafold
+
 ## All this information comes from the official ruby on rails documentation but it may also contain some of the information I came across while researching.
 
 

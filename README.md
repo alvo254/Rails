@@ -100,3 +100,5 @@ These steps are conventionally handled by a controller's edit and update actions
 
 # Using partial to share view code
 Our edit form will look the same as our new form. Even the code will be the same, thanks to the Rails form builder and resourceful routing. The form builder automatically configures the form to make the appropriate kind of request, based on whether the model object has been previously saved.
+
+## A partial's filename must be prefixed with an underscore, e.g. _form.html.erb. But when rendering, it is referenced without the underscore, e.g. render "form".

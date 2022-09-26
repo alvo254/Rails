@@ -35,8 +35,7 @@ Config.ru      | Rack configuration for Rack-based servers used to start the app
 ---------------|-------------------
 db/            | Contains your current database schema, as well as the database migrations.
 ---------------|-------------------
-Gemfile        |These files allow you to specify what gem dependencies are needed for your Rails application. These files are used by the Bundler gem. For more information about Bundler, see the Bundler website.
-Gemfile.lock   |
+Gemfile & Gemfile.lock        |These files allow you to specify what gem dependencies are needed for your Rails application. These files are used by the Bundler gem. For more information about Bundler, see the Bundler website.  |
 ---------------|-------------------
 
 

@@ -55,3 +55,17 @@ vendor         | A place for all third-party code. In a typical Rails applicatio
 .gitarributes  | This file defines metadata for specific paths in a git repository. This metadata can be used by git and other tools to enhance their behavior. See the gitattributes documentation for more information.
 
 # To server the application use - rails server
+
+# Autoloading
+Rails applications do not use require to load application code.
+
+You may have noticed that ArticlesController inherits from ApplicationController, but app/controllers/articles_controller.rb does not have anything like
+
+## require "application_controller" # DON'T DO THIS.
+
+Application classes and modules are available everywhere, you do not need and should not load anything under app with require. This feature is called autoloading, and you can learn more about it in Autoloading and Reloading Constants.
+
+You only need require calls for two use cases:
+
+To load files under the lib directory.
+To load gem dependencies that have require: false in the Gemfile.

@@ -27,6 +27,8 @@ Things you may want to cover:
 ---------------|------------------
 app/           | Contains the controllers, models, views, helpers, mailers, channels, jobs, and assets for your application. You'll focus on this folder for the remainder of this guide.
 ---------------|------------------
+bin/           | Contains the rails script that starts your app and can contain other scripts you use to set up, update, deploy, or run your application.
+
 
 First Header  | Second Header
 ------------- | -------------
@@ -35,7 +37,7 @@ Content Cell  | Content Cell
 
 
 File/Folder	Purpose
-app/	Contains the controllers, models, views, helpers, mailers, channels, jobs, and assets for your application. You'll focus on this folder for the remainder of this guide.
+
 bin/	Contains the rails script that starts your app and can contain other scripts you use to set up, update, deploy, or run your application.
 config/	Contains configuration for your application's routes, database, and more. This is covered in more detail in Configuring Rails Applications.
 config.ru	Rack configuration for Rack-based servers used to start the application. For more information about Rack, see the Rack website.

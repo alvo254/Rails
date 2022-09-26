@@ -21,7 +21,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
-## All this information comes from the officail ruby on rails documentation but it may also contain some of the information i came across while researching.
+## All this information comes from the official ruby on rails documentation but it may also contain some of the information I came across while researching.
 
 
 *File/Folder*  | *Purpose*
@@ -91,3 +91,9 @@ Instead, we will pass a single Hash that contains the values. However, we must s
 
 # validators and displaying error messages
 As we have seen, creating a resource is a multi-step process. Handling invalid user input is another step of that process. Rails provides a feature called validations to help us deal with invalid user input. Validations are rules that are checked before a model object is saved. If any of the checks fail, the save will be aborted, and appropriate error messages will be added to the errors attribute of the model object.
+
+
+## Updating an article
+Updating a resource is very similar to creating a resource. They are both multi-step processes. First, the user requests a form to edit the data. Then, the user submits the form. If there are no errors, then the resource is updated. Else, the form is redisplayed with error messages, and the process is repeated.
+
+These steps are conventionally handled by a controller's edit and update actions. Let's add a typical implementation of these actions to app/controllers/articles_controller.rb, below the create action:

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :friends
   # get 'home/index'
   get 'comments/index'
   get 'home/about'

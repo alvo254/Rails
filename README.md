@@ -108,3 +108,8 @@ Our edit form will look the same as our new form. Even the code will be the same
 Deleting a resource is a simpler process than creating or updating. It only requires a route and a controller action. And our resourceful routing (resources :articles) already provides the route, which maps DELETE /articles/:id requests to the destroy action of ArticlesController.
 
 The destroy action fetches the article from the database, and calls destroy on it. Then, it redirects the browser to the root path with status code
+
+## Generating a new model
+ - rails g model Comment commenter:string body:text article:references
+The :refernces creates an AR relationship of belongs to so comments belongs_to article
+The (:references) keyword used in the shell command is a special data type for models. It creates a new column on your database table with the provided model name appended with an _id that can hold integer values. To get a better understanding, analyze the db/schema.rb file after running the migration.

@@ -102,3 +102,9 @@ These steps are conventionally handled by a controller's edit and update actions
 Our edit form will look the same as our new form. Even the code will be the same, thanks to the Rails form builder and resourceful routing. The form builder automatically configures the form to make the appropriate kind of request, based on whether the model object has been previously saved.
 
 ## A partial's filename must be prefixed with an underscore, e.g. _form.html.erb. But when rendering, it is referenced without the underscore, e.g. render "form".
+
+
+# Deleting an article
+Deleting a resource is a simpler process than creating or updating. It only requires a route and a controller action. And our resourceful routing (resources :articles) already provides the route, which maps DELETE /articles/:id requests to the destroy action of ArticlesController.
+
+The destroy action fetches the article from the database, and calls destroy on it. Then, it redirects the browser to the root path with status code

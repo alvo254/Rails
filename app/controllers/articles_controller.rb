@@ -28,6 +28,7 @@ class ArticlesController < ApplicationController
   # The edit action fetches the article from the database, and stores it in @article 
   # so that it can be used when building the form. By default, 
   # the edit action will render
+
   def edit
     @article = Article.find(params[:id])
   end
@@ -41,6 +42,14 @@ class ArticlesController < ApplicationController
     else
       render :edit, status: :unprocessable_entity
     end
+  end
+
+  # Deleting and article
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+
+    redirect_to root_path, status: :see_other
   end
 
 

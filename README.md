@@ -21,6 +21,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
+## All this information comes from the officail ruby on rails documentation but it may also contain some of the information i came across while researching.
+
 
 *File/Folder*  | *Purpose*
 ---------------|------------------
@@ -68,3 +70,6 @@ Application classes and modules are available everywhere, you do not need and sh
 You only need require calls for two use cases:
  - To load files under the lib directory.
  - To load gem dependencies that have require: false in the Gemfile.
+
+# MVC and YOU
+So far, we've discussed routes, controllers, actions, and views. All of these are typical pieces of a web application that follows the MVC (Model-View-Controller) pattern. MVC is a design pattern that divides the responsibilities of an application to make it easier to reason about. Rails follows this design pattern by convention.

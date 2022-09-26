@@ -21,7 +21,6 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
 
 *File/Folder*  | *Purpose*
 ---------------|------------------
@@ -55,5 +54,4 @@ vendor         | A place for all third-party code. In a typical Rails applicatio
 ---------------|-----------------
 .gitarributes  | This file defines metadata for specific paths in a git repository. This metadata can be used by git and other tools to enhance their behavior. See the gitattributes documentation for more information.
 
-
-               
+# To server the application use - rails server

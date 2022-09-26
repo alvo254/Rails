@@ -25,3 +25,7 @@ Things you may want to cover:
 
 *File/Folder*  | *Purpose*
 ---------------|------------------
+app/           | Contains the controllers, models, views, helpers, mailers, channels, jobs, and assets for your application. You'll focus on this folder for the 
+               | reminde of this guide
+               |
+               

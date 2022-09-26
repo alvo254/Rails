@@ -24,4 +24,9 @@ class ArticlesController < ApplicationController
     end
   end
 
+  private
+  def artice_params
+    params.require(:articles).permit(:title, :body)
+  end
+
 end

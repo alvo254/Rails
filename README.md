@@ -21,6 +21,9 @@ Things you may want to cover:
 
 * Deployment instructions
 
+# What is rails 
+ - Rails is an MVC model view controller
+
 ## All this information comes from the official ruby on rails documentation but it may also contain some of the information I came across while researching.
 
 

@@ -28,7 +28,7 @@ Things you may want to cover:
  - <%= %> This is used to render stuff out to the screen
  - <% %> This is used for loops and other stuff not being renders
 
-# To creat crud in rails we use a scafold
+# To creat crud in rails we use a scaffold
 
 ## All this information comes from the official ruby on rails documentation but it may also contain some of the information I came across while researching.
 

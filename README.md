@@ -97,3 +97,6 @@ As we have seen, creating a resource is a multi-step process. Handling invalid u
 Updating a resource is very similar to creating a resource. They are both multi-step processes. First, the user requests a form to edit the data. Then, the user submits the form. If there are no errors, then the resource is updated. Else, the form is redisplayed with error messages, and the process is repeated.
 
 These steps are conventionally handled by a controller's edit and update actions. Let's add a typical implementation of these actions to app/controllers/articles_controller.rb, below the create action:
+
+# Using partial to share view code
+Our edit form will look the same as our new form. Even the code will be the same, thanks to the Rails form builder and resourceful routing. The form builder automatically configures the form to make the appropriate kind of request, based on whether the model object has been previously saved.

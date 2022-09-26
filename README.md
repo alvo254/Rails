@@ -28,4 +28,9 @@ Things you may want to cover:
 app/           | Contains the controllers, models, views, helpers, mailers, channels, jobs, and assets for your application. You'll focus on this folder for the 
                | reminde of this guide
                |
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
                
